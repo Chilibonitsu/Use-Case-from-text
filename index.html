@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Use Case from text</title>
+
+    <script defer src="downloadFile.js"></script>
+    <script defer src="defaultUseCase.js"></script>
+    <script defer type="module" src="useCaseDiagram.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <div class="container">
+      <textarea class="input" id="input" rows="10" cols="70" wrap="hard"></textarea>
+    
+      <div class="controls">
+
+    
+        <button id="button1">BEST from Actor</button>
+        <button id="button2">From actor</button>
+        <button id="button3">From ellipses</button>
+        <button id="button4">Circular</button>
+        <button id="downloadSvg">Download SVG</button>
+        <button id="downloadXml">Download XML</button>
+        <!-- <button onclick="parse(1)">криво</button>
+        <button onclick="parse(2)">криво</button> -->
+
+        <text>Length from actor to first diagram level <text id="toFirstLvlActualLength"></text></text>
+    
+        <input type="number" id="toFirstLvlLength" value="">
+        
+       
+        <text>Length from first to second <br> diagram level minimum  <text id="startingActualLength"></text></text>
+       
+        <input type="number" id="startingLength" value="">
+     
+       
+        <text>Length from first to <br> second diagram level maximum <text id="endingActualLength"></text></text>
+       
+        <input type="number" id="endingLength" value="">
+        
+       
+      </div>
+    </div>
+
+
+  </body>
+</html>
